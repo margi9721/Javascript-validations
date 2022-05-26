@@ -62,10 +62,6 @@ function addValidate() {
   }
 }
 
-// function add2Validate(){
-
-
-// }
 
 function cityValidate() {
   var city = document.getElementById("city").value;
@@ -122,7 +118,7 @@ function phoneValidate() {
   }
 }
 
-//email validation
+
 function emailValidate() {
   var email = document.getElementById("email").value;
   var emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -149,7 +145,6 @@ function selectValidate() {
 function maxLen() {
   var feedback = document.getElementById("fdb");
   var suggestion = document.getElementById("suggest")
-  // var maxregex = /^.{1,15}$/;
   if (feedback.value.length > 15) {
     document.getElementById("fdbErr").innerHTML = "Maximum 15 chataters only";
   }
@@ -199,10 +194,10 @@ function genderValidate() {
 }
 
 
-
 function validateform() {
   var submit = document.getElementById("submitBtn").value;
   if (fname == "" || lname == "" || addline1 == "" || addline2 == "" || city == "" || state == "" || pcode == "" || phoneNum == "" || email == "") {
     document.getElementById("submitErr").innerHTML = "Fill required details";
   }
 }
+
